@@ -1,13 +1,5 @@
 # tf-reusable-module
 
----
-
-## ✅ 8. Sample: `modules` reused
-
-**README.md**
-```markdown
-# Terraform Reused Module Example
-
 This demonstrates how a single module can be used multiple times with different parameters.
 
 ## Structure
@@ -15,8 +7,12 @@ This demonstrates how a single module can be used multiple times with different 
 ```bash
 .
 ├── main.tf
+├── outputs.tf
 ├── modules/
-│   └── bucket/
-│       ├── main.tf
-│       └── outputs.tf
-|      
+│   └── geeting/
+│       ├── outputs.tf
+│       └── variables.tf
+```
+
+## Results
+![output](https://github.com/mahimasharu2208/tf-reusable-module/blob/main/outputs/reusable.png)
